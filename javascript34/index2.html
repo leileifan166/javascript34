@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(106, 151, 16);
+        }
+        table {
+           margin: 50px auto;
+        }
+        td {
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>用户名:&nbsp;&nbsp;</td>
+            <td><input type="text" class="btn"></td>
+        </tr>
+        <tr>
+            <td>密码:&nbsp;&nbsp;</td>
+            <td><input type="text" class="btn"></td>
+        </tr>
+        <tr>
+            <td>真实姓名:&nbsp;&nbsp;</td>
+            <td><input type="text" class="btn" ></td>
+        </tr>
+        <tr>
+            <td>性别:&nbsp;&nbsp;</td>
+            <td><input type="text" class="btn" id=""></td>
+        </tr>
+        <tr>
+            <td>邮箱:&nbsp;&nbsp;</td>
+            <td><input type="text" class="btn"></td>
+        </tr>
+    </table>
+    <script>
+        var btn = document.getSelection('btn');
+        btn.onfocus = function(){
+            this.style.background = "#ff9966";
+        }
+        
+    </script>
+
+    
+</body>
+</html>

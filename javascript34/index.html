@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" name="save" value="保存" onclick="alert('单击了保存按钮')">
+    <input type="button" value="保存" onclick="clickFunction();">
+    <input type="button" value="保存" id="save">
+    <script>
+        function clickFunction() {
+            alert('保存ボタンをクリックしたね');
+            
+        }
+        var b_save = document.getElementById('save');
+        b_save.onclick = function() {
+            alert('保存ボタンをクリックした');
+            
+        }
+
+    </script>
+
+    <form action="" id="form1" name="form1" method="post">
+        <input type="button" value="保存" id="save1" name="save1">
+    </form>
+    <script>
+        form1.save1.onclick = function(){
+            alert('保存ボタンをクリックした');
+        }
+    </script>
+
+
+    
+</body>
+</html>
